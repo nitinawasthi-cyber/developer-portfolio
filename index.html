@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Awasthi | Software Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Nitin Awasthi, a passionate Software Engineer skilled in Full Stack Development, Data Structures, Algorithms, and System Design.">
+    <meta name="keywords" content="Software Engineer, Portfolio, Full Stack Developer, Computer Science, Java, React, Python, Nitin Awasthi">
+    <meta name="author" content="Nitin Awasthi">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Nitin Awasthi | Software Engineer Portfolio">
+    <meta property="og:description" content="Explore my software engineering projects, technical skills, and experience.">
+    <meta property="og:image" content="assets/images/profile.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Custom Preloader -->
+    <div id="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <p class="loader-text">&lt;Nitin /&gt;</p>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Particle Canvas Backdrop -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#certifications" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="assets/NITIN_B.Tech_GLAU.pdf" target="_blank" class="nav-link">Resume</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme" class="icon-btn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="https://wa.me/917505958446" target="_blank" rel="noopener" class="icon-btn nav-social" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nitin-awasthii/" target="_blank" rel="noopener" class="icon-btn nav-social" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content" data-aos="fade-right">
+                    <div class="badge-status">
+                        <span class="pulse-dot"></span> Available for Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Nitin Awasthi</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typed-text"></span>
+                    </h2>
+                    <p class="hero-description">
+                        Passionate Software Developer with a strong interest in Java, Full Stack Development, Artificial Intelligence, and scalable software solutions. I enjoy building real-world applications, solving challenging problems, and continuously learning modern technologies to create impactful digital experiences.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i> Hire Me
+                        </a>
+                        <a href="assets/NITIN_B.Tech_GLAU.pdf" target="_blank" download="NITIN_B.Tech_GLAU.pdf" class="btn btn-secondary">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect with me:</span>
+                        <div class="social-links-grid">
+                            <a href="https://github.com/nitinawasthi-cyber" target="_blank" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/nitin-awasthii/" target="_blank" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://leetcode.com/u/nitin_2196/" target="_blank" class="social-link" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://www.hackerrank.com/profile/nitin20060307" target="_blank" class="social-link" title="HackerRank"><i class="fa-brands fa-hackerrank"></i></a>
+                            <a href="mailto:nitin20060307@gmail.com" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="tel:+917505958446" class="social-link" title="Phone"><i class="fa-solid fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper" data-aos="fade-left">
+                    <div class="hero-img-backdrop"></div>
+                    <img src="assets/images/profile.jpg" alt="Nitin Awasthi Profile Photo" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Get to know my background, career goals, and core values.</p>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card" data-aos="fade-right">
+                        <h3 class="about-card-title"><i class="fa-solid fa-user-gear"></i> Profile Summary</h3>
+                        <p>
+                            Passionate about software development with a strong foundation in Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems, and Web Development. Enthusiastic about building practical, scalable applications that solve real-world problems while continuously learning modern technologies and software engineering best practices.
+                        </p>
+                        <p>
+                            I enjoy transforming ideas into efficient software solutions through clean, maintainable code. My interests include Full Stack Development, Artificial Intelligence, and creating user-friendly digital experiences that deliver real value.
+                        </p>
+                    </div>
+
+                    <div class="about-details-grid">
+                        <div class="info-box glass-card" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fa-solid fa-bullseye info-icon"></i>
+                            <h4>Career Objective</h4>
+                            <p>To begin my career as a Software Engineer where I can apply my technical knowledge, programming skills, and passion for software development to build impactful applications while continuously learning and growing in a collaborative environment.</p>
+                        </div>
+
+                        <div class="info-box glass-card" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fa-solid fa-fire info-icon"></i>
+                            <h4>Passion</h4>
+                            <p>Passionate about developing scalable web applications, exploring Artificial Intelligence, and building innovative software solutions that enhance user experiences. I enjoy learning new technologies, optimizing application performance, and continuously improving my development skills through hands-on projects.</p>
+                        </div>
+
+                        <div class="info-box glass-card" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="fa-solid fa-star info-icon"></i>
+                            <h4>Strengths</h4>
+                            <ul class="quick-facts-list">
+                                <li>• Fast Learner</li>
+                                <li>• Clean &amp; Maintainable Coding</li>
+                                <li>• Analytical Thinking</li>
+                                <li>• Team Collaboration</li>
+                                <li>• Adaptability</li>
+                                <li>• Effective Communication</li>
+                                <li>• Continuous Learning Mindset</li>
+                                <li>• Time Management</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box glass-card" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fa-solid fa-compass info-icon"></i>
+                            <h4>Quick Facts</h4>
+                            <ul class="quick-facts-list">
+                                <li><strong>Location:</strong> Mainpuri, Uttar Pradesh, India</li>
+                                <li><strong>Degree:</strong> Bachelor of Technology</li>
+                                <li><strong>Branch:</strong> Computer Science &amp; Engineering</li>
+                                <li><strong>Graduation:</strong> 2027</li>
+                                <li><strong>Languages:</strong> English, Hindi</li>
+                                <li><strong>Interests:</strong> Full Stack Dev, AI, Open Source, Software Dev</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Technical <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">My technical toolkit and proficiency levels across programming domains.</p>
+
+                <div class="skills-categories">
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card glass-card" data-aos="fade-up">
+                        <h3 class="category-title"><i class="fa-solid fa-terminal"></i> Programming Languages</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-java skill-icon"></i> Java</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-python skill-icon"></i> Python</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-code skill-icon"></i> C</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-database skill-icon"></i> SQL</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skill-category-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="category-title"><i class="fa-solid fa-globe"></i> Web Development</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-html5 skill-icon"></i> HTML</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-css3-alt skill-icon"></i> CSS</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-bootstrap skill-icon"></i> Bootstrap</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-server skill-icon"></i> ASP.NET</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-cube skill-icon"></i> .NET</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Developer Tools -->
+                    <div class="skill-category-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="category-title"><i class="fa-solid fa-screwdriver-wrench"></i> Databases &amp; Developer Tools</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-database skill-icon"></i> MySQL</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-git-alt skill-icon"></i> Git &amp; GitHub</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-laptop-code skill-icon"></i> VS Code &amp; Visual Studio</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-paper-plane skill-icon"></i> Postman</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-microsoft skill-icon"></i> Microsoft Azure</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-linux skill-icon"></i> Linux (Operating System)</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core CS Concepts -->
+                    <div class="skill-category-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="category-title"><i class="fa-solid fa-brain"></i> Core CS Concepts</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-sitemap skill-icon"></i> Data Structures &amp; Algorithms</span>
+                                    <span class="skill-percent">87%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 87%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-cubes skill-icon"></i> Object-Oriented Programming (OOP)</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-database skill-icon"></i> Database Management System</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-microchip skill-icon"></i> Operating System</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-network-wired skill-icon"></i> Computer Networks</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-gears skill-icon"></i> Software Engineering</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Educational <span class="highlight">Background</span></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">My academic qualifications and scholastic achievements.</p>
+
+                <div class="timeline">
+                    <!-- College -->
+                    <div class="timeline-item left" data-aos="fade-right">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2023 - June 2027</span>
+                            <h3>Bachelor of Technology in Computer Science</h3>
+                            <h4 class="institute-name">GLA University, Mathura</h4>
+                            <p class="cgpa-badge"><i class="fa-solid fa-award"></i> CPI / CGPA: <strong>7.12 / 10.0</strong></p>
+                            <p>Focusing on Computer Science core concepts, C, Python, Java, SQL, Object-Oriented Programming, and Web Development.</p>
+                        </div>
+                    </div>
+
+                    <!-- 12th Senior Secondary -->
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">May 2023</span>
+                            <h3>Senior Secondary (12th Grade)</h3>
+                            <h4 class="institute-name">Dr. Kiran Saujiya Sr. Sec. Edu. Academy, Mainpuri</h4>
+                            <p class="cgpa-badge"><i class="fa-solid fa-award"></i> Percentage: <strong>73%</strong></p>
+                            <p>Core science curriculum strengthening analytical reasoning and mathematical foundation.</p>
+                        </div>
+                    </div>
+
+                    <!-- 10th Secondary -->
+                    <div class="timeline-item left" data-aos="fade-right">
+                        <div class="timeline-dot"><i class="fa-solid fa-book-bookmark"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">May 2021</span>
+                            <h3>Secondary School Certificate (10th Grade)</h3>
+                            <h4 class="institute-name">Dr. Kiran Saujiya Sr. Sec. Edu. Academy, Mainpuri</h4>
+                            <p class="cgpa-badge"><i class="fa-solid fa-award"></i> Percentage: <strong>90%</strong></p>
+                            <p>Graduated with distinction and academic excellence across core academic subjects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PROJECTS SECTION -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Explore my technical builds, web apps, and algorithmic implementations.</p>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project Card 1: AI-Based Exam Evaluator -->
+                    <div class="project-card glass-card" data-category="fullstack web" data-aos="fade-up">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project-1.svg" alt="AI-Based Exam Evaluator" class="project-img">
+                            <span class="project-status completed"><i class="fa-solid fa-check"></i> Completed</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3 class="project-title">AI-Based Exam Evaluator</h3>
+                                <span class="project-duration"><i class="fa-regular fa-clock"></i> AI System</span>
+                            </div>
+                            <p class="project-desc">Developed an AI-powered answer evaluation system using Semantic Similarity (SBERT). Integrated ASP.NET backend with Python AI services through REST APIs and stored evaluation data in MySQL.</p>
+                            <div class="project-tech">
+                                <span>ASP.NET</span><span>Python</span><span>SBERT</span><span>REST API</span><span>MySQL</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/nitinawasthi-cyber" target="_blank" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <button class="btn btn-sm btn-secondary open-modal-btn" data-project="1"><i class="fa-solid fa-circle-info"></i> Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: Food Ordering Website -->
+                    <div class="project-card glass-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/project-2.svg" alt="Food Ordering Website" class="project-img">
+                            <span class="project-status completed"><i class="fa-solid fa-check"></i> Completed</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3 class="project-title">Food Ordering Website</h3>
+                                <span class="project-duration"><i class="fa-regular fa-clock"></i> Web Application</span>
+                            </div>
+                            <p class="project-desc">Designed and developed a responsive frontend food ordering website with an attractive and user-friendly interface.</p>
+                            <div class="project-tech">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/nitinawasthi-cyber" target="_blank" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="https://github.com/nitinawasthi-cyber" target="_blank" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                                <button class="btn btn-sm btn-secondary open-modal-btn" data-project="2"><i class="fa-solid fa-circle-info"></i> Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="section achievements-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up"><span class="highlight">Achievements</span></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Recognition in hackathons and co-curricular activities.</p>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card glass-card tilt-element" data-aos="zoom-in">
+                        <div class="achieve-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>CTF Hackathon</h3>
+                        <p class="achieve-org">Escalate-X</p>
+                        <p>Participated in Escalate-X CTF Hackathon organized by Cyberonites Club, GLA University</p>
+                    </div>
+
+                    <div class="achievement-card glass-card tilt-element" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="achieve-icon"><i class="fa-solid fa-people-group"></i></div>
+                        <h3>Fest Coordinator</h3>
+                        <p class="achieve-org">SRIJAN &amp; IT Mela</p>
+                        <p>Coordinated SRIJAN Cultural Fest &amp; IT Mela (Abacus Society Fest)</p>
+                    </div>
+
+                    <div class="achievement-card glass-card tilt-element" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="achieve-icon"><i class="fa-solid fa-paint-brush"></i></div>
+                        <h3>CSI Club Member</h3>
+                        <p class="achieve-org">Computer Society of India</p>
+                        <p>Active Member of CSI Club Designing Team</p>
+                    </div>
+
+                    <div class="achievement-card glass-card tilt-element" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="achieve-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h3>Athletics Winner</h3>
+                        <p class="achieve-org">Inter-College Competition</p>
+                        <p>Secured 3rd Position in Inter-College Athletics Competition</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications" class="section cert-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up"><span class="highlight">Certifications</span></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Verified credentials validated by leading technology organizations.</p>
+
+                <div class="cert-grid">
+                    <div class="cert-card glass-card" data-aos="fade-up">
+                        <img src="assets/images/cert-1.svg" alt="Microsoft Certified: Azure Fundamentals" class="cert-img">
+                        <div class="cert-body">
+                            <h3>Microsoft Certified: Azure Fundamentals</h3>
+                            <p class="cert-org"><i class="fa-solid fa-building"></i> Microsoft</p>
+                            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Earned on: 16 July 2025</p>
+                            <p class="cert-id" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;"><i class="fa-solid fa-id-card"></i> ID: 7E1168ADD6FAA230</p>
+                            <a href="assets/certificates/microsoft_azure_fundamentals.pdf" target="_blank" class="btn btn-sm btn-outline mt-3"><i class="fa-solid fa-certificate"></i> View Certificate</a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/images/cert-1.svg" alt="Oracle Certified Foundations Associate" class="cert-img">
+                        <div class="cert-body">
+                            <h3>Oracle Certified Foundations Associate</h3>
+                            <p class="cert-org"><i class="fa-solid fa-building"></i> Oracle University</p>
+                            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Earned on: 30 August 2025</p>
+                            <p class="cert-id" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;"><i class="fa-solid fa-shield"></i> OCI 2025 AI Foundations</p>
+                            <a href="assets/certificates/oracle_ai_foundations.pdf" target="_blank" class="btn btn-sm btn-outline mt-3"><i class="fa-solid fa-certificate"></i> View Certificate</a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/images/cert-1.svg" alt="Spring Boot & Microservices Workshop" class="cert-img">
+                        <div class="cert-body">
+                            <h3>Spring Boot &amp; Microservices Workshop</h3>
+                            <p class="cert-org"><i class="fa-solid fa-building"></i> AppSquadz | CodeSquadz</p>
+                            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Awarded on: 13 Nov 2024</p>
+                            <p class="cert-id" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.3rem;"><i class="fa-solid fa-location-dot"></i> GLA University Mathura</p>
+                            <a href="assets/certificates/spring_boot_workshop.png" target="_blank" class="btn btn-sm btn-outline mt-3"><i class="fa-solid fa-certificate"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUME SECTION -->
+        <section id="resume" class="section resume-section">
+            <div class="container">
+                <div class="resume-card glass-card" data-aos="zoom-in">
+                    <div class="resume-info">
+                        <h2>Curriculum Vitae / <span class="highlight">Resume</span></h2>
+                        <p>Looking for a complete summary of my technical experience, courseworks, and metrics? Download my updated resume below.</p>
+                    </div>
+                    <div class="resume-actions">
+                        <a href="assets/NITIN_B.Tech_GLAU.pdf" target="_blank" download="NITIN_B.Tech_GLAU.pdf" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-download"></i> Download PDF Resume
+                        </a>
+                        <a href="assets/NITIN_B.Tech_GLAU.pdf" target="_blank" class="btn btn-secondary btn-lg">
+                            <i class="fa-solid fa-eye"></i> View Online Preview
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Get In <span class="highlight">Touch</span></h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Have a question or want to work together? Feel free to reach out!</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info glass-card" data-aos="fade-right">
+                        <h3>Let's Connect</h3>
+                        <p>I am actively seeking full-time Software Engineer positions, campus placements, and internship opportunities. Let's discuss how I can add value to your organization!</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email Me</h4>
+                                    <p><a href="mailto:nitin20060307@gmail.com">nitin20060307@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4>Call Me</h4>
+                                    <p><a href="tel:+917505958446">+91 7505958446</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="c-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <p><a href="https://wa.me/917505958446" target="_blank" class="btn btn-sm btn-whatsapp mt-1"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="location-card mt-4" style="padding: 1.5rem; border-radius: 16px; border: 1px solid var(--border-color); background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px);">
+                            <h4 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; font-size: 1.1rem; color: var(--text-heading);">
+                                <i class="fa-solid fa-location-dot" style="color: var(--primary-color);"></i> Location
+                            </h4>
+                            <p style="margin-bottom: 1rem; color: var(--text-body); font-weight: 500; font-size: 1rem;">
+                                📍 Mainpuri, Uttar Pradesh, India
+                            </p>
+                            <a href="https://maps.app.goo.gl/SCKQUoG4vsawA6bQ6" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fa-solid fa-map-pin"></i> View on Google Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-card" data-aos="fade-left">
+                        <form id="contact-form" class="contact-form">
+                            <h3>Send Message</h3>
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Your Email</label>
+                                <input type="email" id="form-email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" required placeholder="Job Opportunity / Project Inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" required placeholder="Hi Nitin, I'd like to discuss an opportunity..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#home" class="logo">
+                    <span class="logo-bracket">&lt;</span>Nitin<span class="logo-slash">/&gt;</span>
+                </a>
+                <p>Passionate Software Developer dedicated to crafting clean, maintainable code and scalable applications.</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#certifications">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col socials-col">
+                <h4>Connect</h4>
+                <div class="footer-socials">
+                    <a href="https://github.com/nitinawasthi-cyber" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nitin-awasthii/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:nitin20060307@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 Nitin Awasthi. Designed &amp; Developed by Nitin Awasthi.</p>
+                <div class="legal-links">
+                    <a href="#" id="open-privacy">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#" id="open-terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <a href="#home" class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- PROJECT DETAILS MODAL -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content glass-card">
+            <button class="close-modal" id="close-project-modal">&times;</button>
+            <div class="modal-body" id="modal-project-content">
+                <!-- Dynamically populated via script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- LEGAL MODAL (Terms & Privacy) -->
+    <div class="modal" id="legal-modal">
+        <div class="modal-content glass-card">
+            <button class="close-modal" id="close-legal-modal">&times;</button>
+            <div class="modal-body">
+                <h2 id="legal-title">Privacy Policy</h2>
+                <div id="legal-text" class="mt-3">
+                    <p>This personal portfolio website is designed for professional demonstration and recruitment purposes. Any information submitted via the contact form is transmitted strictly to facilitate direct communication with Nitin Awasthi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Message sent successfully!</div>
+
+    <!-- JavaScript CDN Libraries -->
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- AOS Animate On Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
